@@ -45,6 +45,12 @@ function setup() {
 	buttons[3].mousePressed(updateBoard3);
 	buttons[4].mousePressed(updateBoard4);
 	buttons[5].mousePressed(updateBoard5);
+
+	//add github link
+	strokeWeight(1);
+	linktext = createP('<a href="https://github.com/Hoppingmad9/dench" target="_blank">See the code on github.</a>');
+	linktext.position(1.5*cellSize+boardWidth-cellSize+0.5,9*cellSize);
+	linktext.size(cellSize*6, cellSize*2);
 }
 
 function draw() {
